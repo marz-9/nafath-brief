@@ -46,4 +46,8 @@ https://docs.oracle.com/en/database/oracle/oracle-database/21/dwhsg/data-warehou
 
 ## Misconception in My Track
 
+A common misconception is that containment and eradication are the same step — that isolating an attacker (cutting network access, revoking credentials) means the threat is gone. NIST SP 800-61 Revision 3 treats these as distinct activities: Section 3.2, Table 3, defines containment (RS.MI-01) as preventing the incident from expanding, while eradication (RS.MI-02) is the separate step of removing persistence mechanisms and entry points — deleting malware, disabling breached accounts, fixing exploited vulnerabilities. Skipping eradication and moving straight to recovery after containment is how a service gets re-attacked through the same foothold. 
+
 ## Open Question
+
+Containing a DDoS on the responder slice (e.g., isolating affected traffic) could itself degrade the bandwidth guarantee responders depend on. I would ask how the playbook decides when containment is worth that trade-off versus absorbing the attack and waiting it out.
